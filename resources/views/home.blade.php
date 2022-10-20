@@ -32,9 +32,9 @@
                                             
                                                 <p class="">{{$portal->title}}
                                                     <br>
-                                                    Inside Tower Link : <a href="{{$portal->link}}"> Link </a> 
+                                                    <a href="{{$portal->link}}" target='_blank'>Link Inside Tower</a> 
                                                     <br>
-                                                    Outside Tower Link : <a href='{{$portal->outside_link}}'> Link </a>
+                                                    <a href='{{$portal->outside_link}}' target='_blank'>Link Outside Tower</a>
 
                                                 </p>
                                         </figure>
