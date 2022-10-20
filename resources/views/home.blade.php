@@ -27,7 +27,7 @@
                                     <div class="row portfolio-grid ">
                                    
                                             @foreach($portals as $portal)
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target stretch-card">
                                                 <figure>
                                                     <img src="{{URL::asset($portal->image)}}" alt="image" class="img-fluid" />
                                                 
