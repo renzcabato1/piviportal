@@ -20,8 +20,12 @@
                 <input type="text" name='title' class="form-control" required>
               </div>
               <div class='col-md-12 form-group'>
-                 Link
+                 Inside PMI Tower Link
                 <input type="text" name='link' class="form-control"  required>
+              </div>
+              <div class='col-md-12 form-group'>
+                 Outside PMI Tower Link
+                <input type="text" name='link_outside' class="form-control"  required>
               </div>
             </div>
           </div>

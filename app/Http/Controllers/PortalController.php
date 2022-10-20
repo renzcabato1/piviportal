@@ -38,6 +38,7 @@ class PortalController extends Controller
         $portal = new Portal;
         $portal->title = $request->title;
         $portal->link = $request->link;
+        $portal->outside_link = $request->outside_link;
         $portal->image = $file_name;
         $portal->save();
         
