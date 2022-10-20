@@ -25,19 +25,21 @@
                                         </div>
                                     </div>
                                     <div class="row portfolio-grid ">
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
+                                   
                                             @foreach($portals as $portal)
-                                            <figure>
-                                                <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" />
-                                            
-                                                <p class="">{{$portal->title}}
-                                                    <br>
-                                                    <a href="{{$portal->link}}" target='_blank'>Link Inside Tower</a> 
-                                                    <br>
-                                                    <a href='{{$portal->outside_link}}' target='_blank'>Link Outside Tower</a>
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
+                                                <figure>
+                                                    <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" />
+                                                
+                                                    <p class="">{{$portal->title}}
+                                                        <br>
+                                                        <a href="{{$portal->link}}" target='_blank'>Link Inside Tower</a> 
+                                                        <br>
+                                                        <a href='{{$portal->outside_link}}' target='_blank'>Link Outside Tower</a>
 
-                                                </p>
-                                        </figure>
+                                                    </p>
+                                                </figure>
+                                            </div>
                                             @endforeach
                                          
                                         </div>
