@@ -17,11 +17,11 @@
                                             <h4 class="card-title">Web Applications</h4>
                                             <hr>
                                         </div>
-                                        <div class="col-xl-6 mb-3">
+                                        <div class="col-xl-8 mb-3">
                                             <span class="badge badge-pill badge-outline-success text-success mb-2">Link 1</span> - Link Inside PMI Tower <br>
                                             <span class="badge badge-pill badge-outline-info text-info">Link 2</span> - Link Outside PMI Tower
                                         </div>
-                                        <div class="col-xl-6 mb-3">
+                                        <div class="col-xl-4 mb-3">
                                            
                                             <div class="input-group">
                                                 <input type="text" class="form-control form-control-sm" id="Search"
