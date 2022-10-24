@@ -38,7 +38,7 @@
                                                     <figure class="effect-text-in">
                                                         <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" title='{{$portal->title}}'/>
                                                         <figcaption>
-                                                            <h4>{{$portal->title}}</h4>
+                                                            <h4 style='font-size:10px;'>{{$portal->title}}</h4>
                                                             <p class="">
                                                               
                                                                     <a href="{{$portal->link}}" target='_blank'><button type="button" class="btn btn-outline-success btn-sm">Link 1</button></a>
