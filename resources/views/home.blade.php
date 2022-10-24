@@ -27,19 +27,27 @@
                                     <div class="row portfolio-grid ">
                                    
                                             @foreach($portals as $portal)
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
-                                                <figure>
-                                                    <img src="{{URL::asset($portal->image)}}" alt="image" class="img-fluid" />
-                                                
-                                                    <p class="">{{$portal->title}}
-                                                        <br>
-                                                        <a href="{{$portal->link}}" target='_blank'>Link Inside Tower</a> 
-                                                        <br>
-                                                        <a href='{{$portal->outside_link}}' target='_blank'>Link Outside Tower</a>
-
-                                                    </p>
-                                                </figure>
-                                            </div>
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
+                                                    <figure >
+                                                        <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" title='{{$portal->title}}'/>
+                                                        
+                                                        <span style='display:none;'>{{$portal->title}}</span>
+                                                        
+                                                        <div class='row p-2'>
+                                                            <div class='col-12'>
+                                                                <a href="{{$portal->link}}" target='_blank'><button type="button" class="btn btn-outline-success btn-sm btn-block">Link 1</button></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class='row p-2'>
+                                                            <div class='col-12'>
+                                                                <a href="{{$portal->outside_link}}" target='_blank'><button type="button" class="btn btn-outline-info btn-sm btn-block">Link 2</button></a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                      
+                                                    </figure>
+                                                    
+                                                </div>
                                             @endforeach
                                          
                                         </div>
@@ -49,19 +57,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- content-wrapper ends -->
-            <!-- partial:../../partials/_footer.html -->
-            {{-- <footer class="footer text-center">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between text-center">
-                    <p class="text-muted text-center text-sm-center d-block d-sm-inline-block">Copyright © 2022. Designed
-                        and Developed <a href="http://obananadigitalsolutions.com/" target="_blank">Obanana Digital
-                            Solutions</a>. All rights reserved.</p>
-                </div>
-            </footer> --}}
-            <!-- partial -->
         </div>
-        <!-- main-panel ends -->
     </div>
 @endsection

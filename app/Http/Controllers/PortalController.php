@@ -30,6 +30,9 @@ class PortalController extends Controller
 
     public function new_portal(Request $request)
     {
+        $request->validate([ 
+                'image' => 'required|image|max:2048',                 
+        ]);
         $attachment = $request->file('image');
         $original_name = $attachment->getClientOriginalName();
         $name = time().'_'.$attachment->getClientOriginalName();
