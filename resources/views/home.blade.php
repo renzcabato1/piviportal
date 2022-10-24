@@ -35,22 +35,22 @@
                                    
                                             @foreach($portals as $portal)
                                                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-12 target">
-                                                    <figure >
+                                                    <figure class="effect-text-in">
                                                         <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" title='{{$portal->title}}'/>
+                                                        <figcaption>
+                                                            <h4>{{$portal->title}}</h4>
+                                                            <p class="">
+                                                              
+                                                                    <a href="{{$portal->link}}" target='_blank'><button type="button" class="btn btn-outline-success btn-sm">Link 1</button></a>
+                                                                
+                                                                    <a href="{{$portal->outside_link}}" target='_blank'><button type="button" class="btn btn-outline-info btn-sm">Link 2</button></a>
+                                                            
+                                                            </p>
+                                                          
+                                                        {{-- <span style='display:none;'>{{$portal->title}}</span>
                                                         
-                                                        <span style='display:none;'>{{$portal->title}}</span>
-                                                        
-                                                        <div class='row p-2'>
-                                                            <div class='col-12'>
-                                                                <a href="{{$portal->link}}" target='_blank'><button type="button" class="btn btn-outline-success btn-sm btn-block">Link 1</button></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class='row p-2'>
-                                                            <div class='col-12'>
-                                                                <a href="{{$portal->outside_link}}" target='_blank'><button type="button" class="btn btn-outline-info btn-sm btn-block">Link 2</button></a>
-                                                            </div>
-                                                        </div>
-                                                        
+                                                       
+                                                         --}}
                                                       
                                                     </figure>
                                                     
