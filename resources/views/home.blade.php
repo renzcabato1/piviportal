@@ -17,9 +17,11 @@
                                             <h4 class="card-title">Web Applications</h4>
                                             <hr>
                                         </div>
-                                        <div class="col-xl-8 mb-3">
+                                        <div class="col-xl-4 mb-3 border border-danger p-2">
                                             <span class="badge badge-pill badge-outline-success text-success mb-2">Link 1</span> - Link Inside PMI Tower <br>
                                             <span class="badge badge-pill badge-outline-info text-info">Link 2</span> - Link Outside PMI Tower
+                                        </div>
+                                        <div class="col-xl-4 mb-3">
                                         </div>
                                         <div class="col-xl-4 mb-3">
                                            
@@ -38,7 +40,7 @@
                                                     <figure class="effect-text-in">
                                                         <img src="{{URL::asset($portal->image)}}" alt="image" class="img-thumbnail" title='{{$portal->title}}'/>
                                                         <figcaption>
-                                                            <h4 style='font-size:10px;'>{{$portal->title}}</h4>
+                                                            <h4 style='font-size:14px;'>{{$portal->title}}</h4>
                                                             <p class="">
                                                               
                                                                     <a href="{{$portal->link}}" target='_blank'><button type="button" class="btn btn-outline-success btn-sm">Link 1</button></a>
@@ -46,14 +48,7 @@
                                                                     <a href="{{$portal->outside_link}}" target='_blank'><button type="button" class="btn btn-outline-info btn-sm">Link 2</button></a>
                                                             
                                                             </p>
-                                                          
-                                                        {{-- <span style='display:none;'>{{$portal->title}}</span>
-                                                        
-                                                       
-                                                         --}}
-                                                      
                                                     </figure>
-                                                    
                                                 </div>
                                             @endforeach
                                          
